@@ -10,11 +10,11 @@ browser-based projects.
 ## Installing Vertopal-JS
 
 Vertopal-JS is available on
-[npm](https://www.npmjs.com/package/vertopal-js) and can be installed using
+[npm](https://www.npmjs.com/package/vertopal) and can be installed using
 [npm](https://www.npmjs.com/):
 
 ```bash
-npm install vertopal-js
+npm install vertopal
 ```
 
 If you're not using npm, you can also download the most recent version of
@@ -23,8 +23,6 @@ Vertopal-JS source code as a ZIP file from the
 import it manually into your project.
 
 ## Using Vertopal-JS
-
-## JavaScript Usage
 
 This package includes a public default credential (app: `free`, token:
 `FREE-TOKEN`) that lets you quickly experiment without creating an account.
