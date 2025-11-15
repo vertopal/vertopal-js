@@ -1,0 +1,72 @@
+{
+  "name": "vertopal",
+  "version": "0.1.0",
+  "description": "Convert your files using Vertopal API",
+  "keywords": [
+    "convert",
+    "converter",
+    "conversion",
+    "file",
+    "api",
+    "library"
+  ],
+  "author": {
+    "name": "Vertopal",
+    "email": "contact@vertopal.com",
+    "url": "https://www.vertopal.com"
+  },
+  "license": "MIT",
+  "homepage": "https://www.vertopal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vertopal/vertopal-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vertopal/vertopal-js/issues",
+    "email": "contact@vertopal.com"
+  },
+  "funding": "https://www.vertopal.com/en/donate",
+  "type": "module",
+  "exports": {
+    ".": {
+      "browser": "./lib/index.js",
+      "node": "./lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./io": {
+      "browser": "./lib/entry/io.browser.js",
+      "node": "./lib/entry/io.js",
+      "default": "./lib/entry/io.js"
+    },
+    "./enums": {
+      "browser": "./lib/entry/enums.js",
+      "node": "./lib/entry/enums.js",
+      "default": "./lib/entry/enums.js"
+    },
+    "./exceptions": {
+      "browser": "./lib/entry/exceptions.js",
+      "node": "./lib/entry/exceptions.js",
+      "default": "./lib/entry/exceptions.js"
+    }
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/node": "^24.9.2",
+    "eslint": "^9.39.0",
+    "globals": "^16.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
