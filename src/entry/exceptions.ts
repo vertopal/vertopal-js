@@ -49,5 +49,10 @@ export {
   InvalidInputFormatError,
   NoConverterInputToOutputError,
   NotMatchExtensionAndInputError,
+  TooManyRequestsError,
+  FreeAppLimitedError,
+  DisabledForFreeAppError,
+  WrongFormatStructureError,
+  InvalidFormatError,
   FailedConvertError,
 } from '../common/exceptions.ts';

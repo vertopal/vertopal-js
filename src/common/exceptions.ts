@@ -467,6 +467,57 @@ export class NotMatchExtensionAndInputError extends APIError {
 }
 
 /**
+ * Too Many Requests. Retry after `[DELAY]` seconds.
+ */
+export class TooManyRequestsError extends APIError {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'TooManyRequestsError';
+  }
+}
+
+/**
+ * The free app has a daily limit.
+ * Please try again in the next `[DELAY]` hours.
+ */
+export class FreeAppLimitedError extends APIError {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'FreeAppLimitedError';
+  }
+}
+
+/**
+ * The task is disabled for the free app.
+ */
+export class DisabledForFreeAppError extends APIError {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'DisabledForFreeAppError';
+  }
+}
+
+/**
+ * The format has the wrong structure.
+ */
+export class WrongFormatStructureError extends APIError {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'WrongFormatStructureError';
+  }
+}
+
+/**
+ * The `[FORMAT]` format is not found in the valid formats.
+ */
+export class InvalidFormatError extends APIError {
+  constructor(message?: string) {
+    super(message);
+    this.name = 'InvalidFormatError';
+  }
+}
+
+/**
  * The conversion has failed.
  */
 export class FailedConvertError extends APIError {
